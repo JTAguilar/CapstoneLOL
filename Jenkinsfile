@@ -1,9 +1,7 @@
 pipeline {
 
 	agent any
-	environment{
-	Host
-	}
+
   stages{
   
     stage("build"){
