@@ -8,6 +8,7 @@ pipeline {
     
       steps {
         echo 'building the application...'
+        
       }
     }
     
@@ -19,9 +20,11 @@ pipeline {
     }
     
     stage("deploy") {
-    
+       
       steps {
-        echo 'deploying the application...'
+        dir('html') {
+        
+        }
       }
     }
   }
