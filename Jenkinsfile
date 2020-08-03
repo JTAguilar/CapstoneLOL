@@ -8,10 +8,13 @@ pipeline {
     
       steps {
         echo 'building the application...'
+	      sh 'pwd'	
+	      sh 'git fetch https://github.com/JTAguilar/CapstoneLOL/'
+	      stash name: "testFiles"
           dir('html') {
-            sh 'pwd'
-            sh 'git fetch https://github.com/JTAguilar/CapstoneLOL/'
+            unstash "testFiles"
             //sh 'find ~/my-pipeline -type f -print0 | xargs -0 mv -t ~/my-pipeline/html'
+		
 		
           }
         
