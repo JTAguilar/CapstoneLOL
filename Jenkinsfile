@@ -24,7 +24,7 @@ pipeline {
       steps {
         dir('html') {
           sh 'pwd'
-          sh 'git pull https://github.com/JTAguilar/CapstoneLOL/'
+          sh 'git fetch https://github.com/JTAguilar/CapstoneLOL/'
         }
       }
     }
