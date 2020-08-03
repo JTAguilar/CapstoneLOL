@@ -23,6 +23,7 @@ pipeline {
        
       steps {
         dir('html') {
+          sh 'pwd'
           sh 'git pull --verbose https://github.com/JTAguilar/CapstoneLOL'
         }
       }
