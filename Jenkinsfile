@@ -12,9 +12,11 @@ pipeline {
 	      sh 'git fetch https://github.com/JTAguilar/CapstoneLOL/'
 	      stash name: "testFiles"
 	      sh 'mkdir html'
+	      sh 'ls'
           dir('html') {
 		sh 'pwd'
             unstash "testFiles"
+		  sh 'ls'
             //sh 'find ~/my-pipeline -type f -print0 | xargs -0 mv -t ~/my-pipeline/html'
 		
 		
@@ -36,7 +38,9 @@ pipeline {
     
       steps{
         echo 'cleaning up...'
+	sh 'ls'
 	sh 'rm -rf ./html'
+	sh 'ls'
       }
     }	  
   }
