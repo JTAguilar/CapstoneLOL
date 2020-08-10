@@ -32,7 +32,7 @@ pipeline {
        
       steps {
         echo 'Deploying the applicaiton...'
-	sh 'cp -RT ./html /var/www/html'
+	sh 'cp -RT ./html /var/www/'
 	      //sh 'ip addr show docker0 | grep -Po 'inet \K[\d.]+'
 	
       }
