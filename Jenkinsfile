@@ -32,7 +32,7 @@ pipeline {
        
       steps {
         echo 'Deploying the applicaiton...'
-	//sh 'docker cp trusting_elbakyan:var/jenkins_home/workspace/my-pipeline /var/www/'
+	sh 'cp -RT /var/lib/jenkins/workspace/WebServerPipeline/html /var/www/html'
 	      //sh 'ip addr show docker0 | grep -Po 'inet \K[\d.]+'
 	
       }
