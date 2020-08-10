@@ -11,6 +11,7 @@ pipeline {
 	      sh 'pwd'	
 	      sh 'git fetch https://github.com/JTAguilar/CapstoneLOL/'
 	      stash name: "testFiles"
+	      sh 'mkdir html'
           dir('html') {
             unstash "testFiles"
             //sh 'find ~/my-pipeline -type f -print0 | xargs -0 mv -t ~/my-pipeline/html'
@@ -21,13 +22,6 @@ pipeline {
         }
      }
     
-    stage("test") {
-    
-      steps{
-        echo 'testing the application...'
-      }
-    }
-    
     stage("deploy") {
        
       steps {
@@ -37,5 +31,12 @@ pipeline {
 	
       }
     }
+    stage("cleanup") {
+    
+      steps{
+        echo 'cleaning up...'
+	sh 'rm -rf html'
+      }
+    }	  
   }
 }
