@@ -1,5 +1,6 @@
 body{
 	background-color: azure;
+	padding: 25px;
 }
 
 h1{
@@ -7,17 +8,28 @@ h1{
 	padding: 12px;
 	bottom-margin: 15px;
 }
-.Match{
-	width: 25%;
+.MatchV{
+	background-color: paleturquoise;
+	width: 78%;
 	display:flex;
 	position: relative;
 	padding: 25px;
 	margin: 15px auto;
 	align-content: center;
-	border: 5px solid;
+	border: 0.5px solid;
+}
+.MatchD{
+	background-color: rgba(225, 37, 12, 0.37);
+	width: 78%;
+	display:flex;
+	position: relative;
+	padding: 25px;
+	margin: 15px auto;
+	align-content: center;
+	border: 0.5px solid;
 }
 
-.MatchHistory{
+.gameList{
 	border: 2px solid;
 	width:40%;
 	display:block;
@@ -25,6 +37,20 @@ h1{
 	padding: 25px;
 	margin: 15px auto;
 	align-content: center;
+}
+
+.sumName{
+	background-color: black;
+	color: wheat;
+	font-size: 15pt;
+	font-style: italic;
+	display: flex;
+	margin: -33px auto 20px auto;
+	align-content: center;
+	width: max-content;
+	z-index: 1;
+	position: relative;
+	padding: 5px;
 }
 
 .l-container{
