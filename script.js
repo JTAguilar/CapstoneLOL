@@ -1,8 +1,8 @@
 var Playerdata;
 var MatchID;
 var request = new XMLHttpRequest();
-var ApiKey = 'RGAPI-e91cd72c-1b2c-49a6-880b-aaba62f668d4';
-var Summoner = document.getElementById("summonerForm");
+var ApiKey = 'RGAPI-8f38637d-2708-45e5-99d5-a5d3d737193f';
+
 
 
 
@@ -25,22 +25,28 @@ function MatchStatsLoadComplete(machID) {
     request.send();
 }
 
-Summoner.onSubmit = function(){
-        var username = Summoner["username"].value;
-        // console.log(username);
-        location.href("Summonerinfo.html")
+function callAPI(){
+    var params = new URLSearchParams(window.location.search);
+        //console.log(params.get('userName'));
+        
+        var Summoner = params.get('userName');
+        var username = Summoner;
+        //console.log(username);
+        //location.replace = "./Summonerinfo.html"
         loadPlayerData(username);
         loadMatchData(accID)
         return false;
 
     }
 
+
 function playerLoadComplete(evt) {
     Playerdata = JSON.parse(request.responseText);
     console.log(Playerdata);
     
         var accID = Playerdata.accountID   
-
+        //loadMatchData(accID);
+        //return accID;
 }
 
 function GameLoadComplete(evt) {
