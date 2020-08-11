@@ -1,59 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="Day.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
-
 <body>
-
-    <div class="Days">
-        <div id="place0"></div>
-        <img id="conditionsImg0" height="80%" width="80%" />
-        <div id="day0"></div>
-        <div id="conditionsDesc0"></div>
-        <div id="currentTemp0"></div>
+    <h1>Hello and welcome to this page. Don't worry its a work in progress.</h1>
+    <div class="l-container">            
+        <div class="index-logo">
+                <iframe src="https://giphy.com/embed/RGdfSa7X0OIQzGPfjZ" title="Fine" alt="This is fine" class="Image"></iframe>
+        </div>
+    
+        <form id="summonerForm" class="summoner-search-form" action="Summonerinfo.html" </form>
+        <input type="text" name="userName" class="summoner-search-form__text" placeholder="Name1, Name2, ...">
+        <button type="submit" class="summoner-search-form__button" id="submitButton" >
+        Search
+        </button>
+        <button type="button" class="summoner-search-form__setting" onclick="$.OP.GG.layout.regionLanguage.open();">
+            <span>NA</span>
+        </button>
+        
     </div>
-
-    <div class="Days">
-        <div id="place1"></div>
-        <img id="conditionsImg1" height="80%" width="80%" />
-        <div id="day1"></div>
-        <div id="conditionsDesc1"></div>
-        <div id="currentTemp1"></div>
-    </div>
-
-    <div class="Days">
-        <div id="place2"></div>
-        <img id="conditionsImg2" height="80%" width="80%" />
-        <div id="day2"></div>
-        <div id="conditionsDesc2"></div>
-        <div id="currentTemp2"></div>
-    </div>
-
-    <div class="Days">
-        <div id="place3"></div>
-        <img id="conditionsImg3" height="80%" width="80%" />
-        <div id="day3"></div>
-        <div id="conditionsDesc3"></div>
-        <div id="currentTemp3"></div>
-    </div>
-
-    <div class="Days">
-        <div id="place4"></div>
-        <img id="conditionsImg4" height="80%" width="80%" />
-        <div id="day4"></div>
-        <div id="conditionsDesc4"></div>
-        <div id="currentTemp4"></div>
-    </div>
-
-
-  
-
-    <script src="script.js"></script>
-
-
-
-
 </body>
+
 </html>
