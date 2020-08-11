@@ -7,6 +7,25 @@ h1{
 	padding: 12px;
 	bottom-margin: 15px;
 }
+.Match{
+	width: 25%;
+	display:flex;
+	position: relative;
+	padding: 25px;
+	margin: 15px auto;
+	align-content: center;
+	border: 5px solid;
+}
+
+.MatchHistory{
+	border: 2px solid;
+	width:40%;
+	display:block;
+	position: relative;
+	padding: 25px;
+	margin: 15px auto;
+	align-content: center;
+}
 
 .l-container{
 position:relative; 
@@ -28,7 +47,7 @@ padding-bottom:120px;
 }
 
 .summoner-search-form{
-	margin: auto;
+	margin: 25px auto;
 	display: block;
 	width: max-content;
 	height: max-content;

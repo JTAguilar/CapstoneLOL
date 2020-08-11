@@ -6,8 +6,19 @@
 </head>
 <body onload="callAPI()">
 
+<div class="search_bar">
+<form id="summonerForm" class="summoner-search-form" action="Summonerinfo.html" </form>
+        <input type="text" name="userName" class="summoner-search-form__text" placeholder="Name1, Name2, ...">
+        <button type="submit" class="summoner-search-form__button" id="submitButton" >
+        Search
+        </button>
+        <button type="button" class="summoner-search-form__setting" onclick="$.OP.GG.layout.regionLanguage.open();">
+            <span>NA</span>
+        </button>
+</div>
+
     <div class="Match">
-        <div id="place0"></div>
+        <div id="result0"></div>
         <img id="champImage0" height="80%" width="80%" />
         <div id="kills0"></div>
         <div id="deaths0"></div>
@@ -15,7 +26,7 @@
     </div>
 
     <div class="Match">
-        <div id="place1"></div>
+        <div id="result1"></div>
         <img id="champImage1" height="80%" width="80%" />
         <div id="kills1"></div>
         <div id="deaths1"></div>
@@ -23,7 +34,7 @@
     </div>
 
     <div class="Match">
-        <div id="place2"></div>
+        <div id="result2"></div>
         <img id="champImage2" height="80%" width="80%" />
         <div id="kills2"></div>
         <div id="deaths2"></div>
@@ -31,7 +42,7 @@
     </div>
 
     <div class="Match">
-        <div id="place3"></div>
+        <div id="result3"></div>
         <img id="champImage3" height="80%" width="80%" />
         <div id="kills3"></div>
         <div id="deaths3"></div>
@@ -39,11 +50,171 @@
     </div>
 
     <div class="Match">
-        <div id="place4"></div>
+        <div id="result4"></div>
         <img id="champImage4" height="80%" width="80%" />
         <div id="kills4"></div>
         <div id="deaths4"></div>
         <div id="assists4"></div>
+    </div>
+
+        <div class="Match">
+        <div id="result5"></div>
+        <img id="champImage5" height="80%" width="80%" />
+        <div id="kills5"></div>
+        <div id="deaths5"></div>
+        <div id="assists5"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result6"></div>
+        <img id="champImage6" height="80%" width="80%" />
+        <div id="kills6"></div>
+        <div id="deaths6"></div>
+        <div id="assists6"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result7"></div>
+        <img id="champImage7" height="80%" width="80%" />
+        <div id="kills7"></div>
+        <div id="deaths7"></div>
+        <div id="assists7"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result8"></div>
+        <img id="champImage8" height="80%" width="80%" />
+        <div id="kills8"></div>
+        <div id="deaths8"></div>
+        <div id="assists8"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result9"></div>
+        <img id="champImage9" height="80%" width="80%" />
+        <div id="kills9"></div>
+        <div id="deaths9"></div>
+        <div id="assists9"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result10"></div>
+        <img id="champImage10" height="80%" width="80%" />
+        <div id="kills10"></div>
+        <div id="deaths10"></div>
+        <div id="assists10"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result11"></div>
+        <img id="champImage11" height="80%" width="80%" />
+        <div id="kills11"></div>
+        <div id="deaths11"></div>
+        <div id="assists11"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result12"></div>
+        <img id="champImage12" height="80%" width="80%" />
+        <div id="kills12"></div>
+        <div id="deaths12"></div>
+        <div id="assists12"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result13"></div>
+        <img id="champImage13" height="80%" width="80%" />
+        <div id="kills13"></div>
+        <div id="deaths13"></div>
+        <div id="assists13"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result14"></div>
+        <img id="champImage14" height="80%" width="80%" />
+        <div id="kills14"></div>
+        <div id="deaths14"></div>
+        <div id="assists14"></div>
+    </div>
+
+        <div class="Match">
+        <div id="result15"></div>
+        <img id="champImage15" height="80%" width="80%" />
+        <div id="kills15"></div>
+        <div id="deaths15"></div>
+        <div id="assists15"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result16"></div>
+        <img id="champImage16" height="80%" width="80%" />
+        <div id="kills16"></div>
+        <div id="deaths16"></div>
+        <div id="assists16"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result17"></div>
+        <img id="champImage17" height="80%" width="80%" />
+        <div id="kills17"></div>
+        <div id="deaths17"></div>
+        <div id="assists17"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result18"></div>
+        <img id="champImage18" height="80%" width="80%" />
+        <div id="kills18"></div>
+        <div id="deaths18"></div>
+        <div id="assists18"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result19"></div>
+        <img id="champImage19" height="80%" width="80%" />
+        <div id="kills19"></div>
+        <div id="deaths19"></div>
+        <div id="assists19"></div>
+    </div>
+
+            <div class="Match">
+        <div id="result20"></div>
+        <img id="champImage20" height="80%" width="80%" />
+        <div id="kills20"></div>
+        <div id="deaths20"></div>
+        <div id="assists20"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result21"></div>
+        <img id="champImage21" height="80%" width="80%" />
+        <div id="kills21"></div>
+        <div id="deaths21"></div>
+        <div id="assists21"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result22"></div>
+        <img id="champImage22" height="80%" width="80%" />
+        <div id="kills22"></div>
+        <div id="deaths22"></div>
+        <div id="assists22"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result23"></div>
+        <img id="champImage23" height="80%" width="80%" />
+        <div id="kills23"></div>
+        <div id="deaths23"></div>
+        <div id="assists23"></div>
+    </div>
+
+    <div class="Match">
+        <div id="result24"></div>
+        <img id="champImage24" height="80%" width="80%" />
+        <div id="kills24"></div>
+        <div id="deaths24"></div>
+        <div id="assists24"></div>
     </div>
 
 </body>
