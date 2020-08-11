@@ -1,7 +1,7 @@
 var Playerdata;
 var MatchID;
 var request = new XMLHttpRequest();
-var ApiKey = 'RGAPI-8f38637d-2708-45e5-99d5-a5d3d737193f';
+var ApiKey = 'RGAPI-f2fd7a19-6c8b-4f42-b789-d3efc9bbef55';
 var proxyurl = "https://cors-anywhere.herokuapp.com/"
 var params = new URLSearchParams(window.location.search);
 var Summoner = params.get('userName');
@@ -45,7 +45,7 @@ function callAPI(){
 function playerLoadComplete(evt) {
     Playerdata = JSON.parse(request.responseText);
     console.log(Playerdata);
-    
+        document.getElementById("sumName").innerHTML = Playerdata.name;
         var accID = Playerdata.accountId
         console.log(accID);
         loadMatchData(accID);
@@ -74,16 +74,20 @@ function MatchStatsLoadComplete(evt) {
             var participantID = s;
                 for(var game = 0; game <25; game++){
                     if(games[game] == Gamestats.gameId){
+                    var winCondition = Gamestats.participants[participantID].stats.win
+                    var div = document.getElementById("match" + game);
                         document.getElementById("champImage" + game).innerHTML = 'champID:' + Gamestats.participants[participantID].championId
                         document.getElementById("kills" + game).innerHTML = 'K' + Gamestats.participants[participantID].stats.kills
                         document.getElementById("deaths" + game).innerHTML = '/D' + Gamestats.participants[participantID].stats.deaths
                         document.getElementById("assists" + game).innerHTML = '/A:' + Gamestats.participants[participantID].stats.assists
-                        if(Gamestats.participants[participantID].stats.win == true){
-                            document.getElementById("result" + game).innerHTML = 'Victory'
+                        if(winCondition == true){
+                            document.getElementById("result" + game).innerHTML = 'Victory';
+                            div.classList.add('MatchV');
                             break;
 				        }
                         else{
                              document.getElementById("result" + game).innerHTML = 'Defeat'
+                             div.classList.add('MatchD');
                              break;
 				        }
 					}
