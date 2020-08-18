@@ -69,36 +69,36 @@ h1{
 	vertical-align: middle;
 }
 
-.results {
+.layout > .results {
 	width: 70px;
 	text-align: center;
 	line-height: 16px;
 }
-.gameSettings {
+.layout > .gameSettings {
 	width: 100px;
 	font-size: 0;
 }
 
-.KDA{
+.layout > .KDA{
 	
 	font-size: 15px;
 	white-space: nowrap;
 }
-.Stats {
+.layout > .Stats {
 	width: 90px;
 	font-size: 11px;
 	text-align: center;
 	line-height: 18px;
 }
-.players {
+.layout > .players {
 	width: 170px;
 	font-size: 0;
 }
-.team {
+.layout >.players > .team {
 float: left;
 width: 50%;
 }
-.summoner{
+.layout > .players > .team > .summoner{
 	display: block;
 	width: 80px;
 	height: 18px;
