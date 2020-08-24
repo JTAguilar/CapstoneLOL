@@ -59,6 +59,10 @@ const dbName = 'LOLCapstone'
         request.onload = MatchStatsLoadComplete;
         request.send();
     }
+    function GetchampIMG(file, callback){
+        request.open('GET', file, true);
+        request.send(null);
+    }
         
 
     function callAPI(){
@@ -122,7 +126,13 @@ const dbName = 'LOLCapstone'
                             document.getElementById("Level").innerHTML = Gamestats.participants[participantID].stats.champLevel
                             document.getElementById("CS").innerHTML = Gamestats.participants[participantID].stats.totalMinionsKilled
                             for(players = 0; players < 10; players++){
-                            GetchampIMG(Gamestats.);
+                            GetchampIMG('/10.16.1/data/en_US/champion/championFull.json', function(text){
+                                var champim = JSON.parse(text);
+                                console.log(champim)
+                                
+                            //document.getElementById("Isumm" + players).innerHTML = 
+                            }
+
                             document.getElementById("summ" + players).innerHTML = Gamestats.participantIdentities[players].player.summonerName
                             }
                             if(winCondition == true){
