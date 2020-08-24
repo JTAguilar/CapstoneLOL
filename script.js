@@ -45,7 +45,7 @@ const dbName = 'LOLCapstone'
     function loadPlayerData(username) {
     
         request.open('GET', proxyurl + 'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/'+ username +'?api_key=' + ApiKey);  
-        //request.onload = playerLoadComplete;
+        request.onload = playerLoadComplete;
         request.send();
     }
     function loadMatchData(accID) {
