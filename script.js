@@ -59,6 +59,7 @@ MongoClient.connect(url, function(err, client) {
         request.onload = MatchStatsLoadComplete;
         request.send();
     }
+        /*
 
     function callAPI(){
         var params = new URLSearchParams(window.location.search);
@@ -74,7 +75,6 @@ MongoClient.connect(url, function(err, client) {
 
         }
 
-        /*
     function playerLoadComplete(evt) {
         Playerdata = JSON.parse(request.responseText);
         console.log(Playerdata);
@@ -138,5 +138,6 @@ MongoClient.connect(url, function(err, client) {
 				    }
            }
 	     }
-    } */
+    } 
 });
+*/
