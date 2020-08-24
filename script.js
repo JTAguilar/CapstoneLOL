@@ -74,7 +74,7 @@ MongoClient.connect(url, function(err, client) {
 
         }
 
-
+        /*
     function playerLoadComplete(evt) {
         Playerdata = JSON.parse(request.responseText);
         console.log(Playerdata);
@@ -85,7 +85,7 @@ MongoClient.connect(url, function(err, client) {
             //return accID;
     }
 
- /*   function GameLoadComplete(evt) {
+    function GameLoadComplete(evt) {
         MatchID = JSON.parse(request.responseText);
         //console.log(MatchID);
    
