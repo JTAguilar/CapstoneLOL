@@ -106,15 +106,15 @@ const dbName = 'LOLCapstone'
         Gamestats = JSON.parse(request.responseText);
         console.log(Gamestats);
 
-        let elem = document.createElement('div');
+       // let elem = document.createElement('div');
         for (var s = 0; s <9; s++){
           var participant = Gamestats.participantIdentities[s].player.summonerName.toLowerCase();
           if (participant == username){
                 var participantID = s;
                     for(var game = 0; game <25; game++){
                     
-                        elem.append(tmpl.content.cloneNode(true));
-                        document.body.append(elem);
+                        //elem.append(tmpl.content.cloneNode(true));
+                       // document.body.append(elem);
 
                         if(games[game] == Gamestats.gameId){
                             var winCondition = Gamestats.participants[participantID].stats.win
@@ -127,12 +127,16 @@ const dbName = 'LOLCapstone'
                             document.getElementById("Level").innerHTML = Gamestats.participants[participantID].stats.champLevel
                             document.getElementById("CS").innerHTML = Gamestats.participants[participantID].stats.totalMinionsKilled
                             for(players = 0; players < 10; players++){
-                                //GetchampIMG('/10.16.1/data/en_US/champion/championFull.json', function(text){
-                                //    var champim = JSON.parse(text);
-                                 //   console.log(champim)
-                                
-                                //document.getElementById("Isumm" + players).innerHTML = 
-                                //}
+                               // GetchampIMG('/10.16.1/data/en_US/champion/championFull.json', function(text){
+                                   // var champim = JSON.parse(text);
+                               //     console.log(champim)
+                                 //   forEach(chimpim.keys){
+                                   // if(Gamestats.participants[players].championId === champim.keys[]){
+                                    //var 
+                                  //  }
+                                //    }
+                              //  document.getElementById("Isumm" + players).innerHTML = 
+                               // }
                             document.getElementById("summ" + players).innerHTML = Gamestats.participantIdentities[players].player.summonerName
                             }
                             if(winCondition == true){
