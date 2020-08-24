@@ -10,7 +10,7 @@ $proxyurl = \'https://cors-anywhere.herokuapp.com/';
 $userName = false;
 if(isset($_GET['userName'])){
     $userName = $_GET['userName'];
-    $loadPlayerData = $proxyurl . 'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/' . $userName . $ApiKey
+    $loadPlayerData = $proxyurl . 'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/' . $userName . '?api_key=' . $ApiKey
     $playerdata_JSON = file_get_contents($loadPlayerData);
     $playerdata_array = json_decode($playerdata_JSON, true);
     console_log($playerdata_array);
