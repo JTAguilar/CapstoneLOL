@@ -1,6 +1,3 @@
-
-const {MongoClient} = require('mongodb');
-
 var Playerdata;
 var MatchID;
 var request = new XMLHttpRequest();
