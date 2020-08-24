@@ -31,6 +31,7 @@ MongoClient.connect(url, function(err, client) {
             data: Playerdata
         }
         db1.collection("SummNames").insetOne(sumNameInfo);
+        console.log(sumNameInfo);
     }
 
 
@@ -60,7 +61,7 @@ MongoClient.connect(url, function(err, client) {
     }
         
 
-    function callAPI(){
+/*    function callAPI(){
         var params = new URLSearchParams(window.location.search);
             //console.log(params.get('userName'));
         
