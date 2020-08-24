@@ -111,7 +111,7 @@ const dbName = 'LOLCapstone'
           var participant = Gamestats.participantIdentities[s].player.summonerName.toLowerCase();
           if (participant == username){
                 var participantID = s;
-                    for(var game = 0; game <25; game++){
+                    for(var game = 0; game <1; game++){
                     
                         //elem.append(tmpl.content.cloneNode(true));
                        // document.body.append(elem);
