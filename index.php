@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 $servername = 'localhost';
 $username = 'Admin';
 $password = 'Bubbletoaster23~';
@@ -19,7 +19,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-
+-->
 
 
 <html>
