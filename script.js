@@ -96,7 +96,7 @@ const dbName = 'LOLCapstone'
           //console.log(games);
     }
 
-   // function MatchStatsLoadComplete(evt) {
+    function MatchStatsLoadComplete(evt) {
         var username = params.get('userName').toLowerCase();
         Gamestats = JSON.parse(request.responseText);
         console.log(Gamestats);
@@ -139,4 +139,4 @@ const dbName = 'LOLCapstone'
            }
 	     }
     } 
-    */
+    
