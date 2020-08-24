@@ -25,46 +25,47 @@
 </div>
 
 <div class="gameList">
-    <div  id="match0" class="layout">
-        <div id="result0" class="results"></div>
-        <div class="gameSettings">
-            <img id="champImage0" height="80%" width="80%" />
-        </div>
-        <div id="KDA" class="KDA">
-            <div class="KDA">
-                <span id="kills0"></span>/
-                <span id="deaths0"></span>/
-                <span id="assists0"></span>
+    <template>
+        <div  id="match" class="layout">
+            <div id="result" class="results"></div>
+            <div class="gameSettings">
+                <img id="champImage" height="80%" width="80%" />
             </div>
-            <div class="KDARatio">KDA: 
-                <span id="KDARatio0" class="KDARatio"></span>:1
+            <div id="KDA" class="KDA">
+                <div class="KDA">
+                    <span id="kills"></span>/
+                    <span id="deaths"></span>/
+                    <span id="assists"></span>
+                </div>
+                <div class="KDARatio">KDA: 
+                    <span id="KDARatio" class="KDARatio"></span>:1
+                </div>
             </div>
-        </div>
-        <div class="Stats">
-            <div>Level: <span id="Level0"></span></div>
-            <div><span id="CS0"></span> CS</div>
+            <div class="Stats">
+                <div>Level: <span id="Level"></span></div>
+                <div><span id="CS"></span> CS</div>
 
-        </div>
-        <div class="players">
-            <div id="team01" class="team">
-                <div class="summoner" id="summ00"></div>
-                <div class="summoner" id="summ01"></div>
-                <div class="summoner" id="summ02"></div>
-                <div class="summoner" id="summ03"></div>
-                <div class="summoner" id="summ04"></div>
             </div>
-            <div id="team02" class="team">
-                <div class="summoner" id="summ05"></div>
-                <div class="summoner" id="summ06"></div>
-                <div class="summoner" id="summ07"></div>
-                <div class="summoner" id="summ08"></div>
-                <div class="summoner" id="summ09"></div>
+            <div class="players">
+                <div id="team1" class="team">
+                    <div class="summoner" id="summ0"></div>
+                    <div class="summoner" id="summ1"></div>
+                    <div class="summoner" id="summ2"></div>
+                    <div class="summoner" id="summ3"></div>
+                    <div class="summoner" id="summ4"></div>
+                </div>
+                <div id="team2" class="team">
+                    <div class="summoner" id="summ5"></div>
+                    <div class="summoner" id="summ6"></div>
+                    <div class="summoner" id="summ7"></div>
+                    <div class="summoner" id="summ8"></div>
+                    <div class="summoner" id="summ9"></div>
+                </div>
             </div>
-        </div>
+         </div>
+    </template>
 
-    </div>
-
-    <div id="match1">
+    <div id="match1"  class="layout">
         <div id="result1" class="results"></div>
         <div class="gameSettings">
             <img id="champImage1" height="80%" width="80%" />
@@ -102,8 +103,8 @@
         </div>
     </div>
 
-    <div id="match2">
-                <div id="result2" class="results"></div>
+    <div id="match2"  class="layout">
+        <div id="result2" class="results"></div>
         <div class="gameSettings">
             <img id="champImage2" height="80%" width="80%" />
         </div>
@@ -140,8 +141,8 @@
         </div>
     </div>
 
-    <div id="match3">
-               <div id="result3" class="results"></div>
+    <div id="match3"  class="layout">
+    <div id="result3" class="results"></div>
         <div class="gameSettings">
             <img id="champImage3" height="80%" width="80%" />
         </div>
@@ -178,7 +179,7 @@
         </div>
     </div>
 
-    <div id="match4">
+    <div id="match4"  class="layout">
                 <div id="result4" class="results"></div>
         <div class="gameSettings">
             <img id="champImage4" height="80%" width="80%" />
@@ -200,7 +201,9 @@
         </div>
         <div class="players">
             <div id="team41" class="team">
+                <div id="Summoners">
                 <div class="summoner" id="summ40"></div>
+
                 <div class="summoner" id="summ41"></div>
                 <div class="summoner" id="summ42"></div>
                 <div class="summoner" id="summ43"></div>
@@ -215,7 +218,8 @@
             </div>
         </div>
     </div>
-
+    
+    <div id="match7"  class="layout">
                <div id="result5" class="results"></div>
         <div class="gameSettings">
             <img id="champImage5" height="80%" width="80%" />
@@ -253,7 +257,7 @@
         </div>
     </div>
 
-    <div id="match6">
+    <div id="match6" class="layout">
                <div id="result6" class="results"></div>
         <div class="gameSettings">
             <img id="champImage6" height="80%" width="80%" />
@@ -291,7 +295,7 @@
         </div>
     </div>
 
-    <div id="match7">
+    <div id="match7" class="layout">
                <div id="result7" class="results"></div>
         <div class="gameSettings">
             <img id="champImage7" height="80%" width="80%" />
@@ -329,7 +333,7 @@
         </div>
     </div>
 
-    <div id="match8">
+    <div id="match8" class="layout">
                <div id="result8" class="results"></div>
         <div class="gameSettings">
             <img id="champImage8" height="80%" width="80%" />
@@ -367,7 +371,7 @@
         </div>
     </div>
 
-    <div id="match9">
+    <div id="match9" class="layout">
              <div id="result9" class="results"></div>
         <div class="gameSettings">
             <img id="champImage9" height="80%" width="80%" />
@@ -405,7 +409,7 @@
         </div>
     </div>
 
-    <div id="match10">
+    <div id="match10" class="layout">
                <div id="result10" class="results"></div>
         <div class="gameSettings">
             <img id="champImage10" height="80%" width="80%" />
@@ -443,7 +447,7 @@
         </div>
     </div>
 
-    <div id="match11">
+    <div id="match11" class="layout">
                <div id="result11" class="results"></div>
         <div class="gameSettings">
             <img id="champImage11" height="80%" width="80%" />
@@ -481,7 +485,7 @@
         </div>
     </div>
 
-    <div id="match12">
+    <div id="match12" class="layout">
                <div id="result12" class="results"></div>
         <div class="gameSettings">
             <img id="champImage12" height="80%" width="80%" />
@@ -519,7 +523,7 @@
         </div>
     </div>
 
-    <div id="match13">
+    <div id="match13" class="layout">
              <div id="result13" class="results"></div>
         <div class="gameSettings">
             <img id="champImage13" height="80%" width="80%" />
@@ -557,7 +561,7 @@
         </div>
     </div>
 
-    <div id="match14">
+    <div id="match14" class="layout">
              <div id="result14" class="results"></div>
         <div class="gameSettings">
             <img id="champImage14" height="80%" width="80%" />
@@ -595,7 +599,7 @@
         </div>
     </div>
 
-    <div id="match15">
+    <div id="match15" class="layout">
               <div id="result15" class="results"></div>
         <div class="gameSettings">
             <img id="champImage15" height="80%" width="80%" />
@@ -633,7 +637,7 @@
         </div>
     </div>
 
-    <div id="match16">
+    <div id="match16" class="layout">
              <div id="result16" class="results"></div>
         <div class="gameSettings">
             <img id="champImage16" height="80%" width="80%" />
@@ -671,7 +675,7 @@
         </div>
     </div>
 
-    <div id="match17">
+    <div id="match17" class="layout">
               <div id="result17" class="results"></div>
         <div class="gameSettings">
             <img id="champImage17" height="80%" width="80%" />
@@ -709,7 +713,7 @@
         </div>
     </div>
 
-    <div id="match18">
+    <div id="match18" class="layout">
               <div id="result18" class="results"></div>
         <div class="gameSettings">
             <img id="champImage18" height="80%" width="80%" />
@@ -747,7 +751,7 @@
         </div>
     </div>
 
-    <div id="match19">
+    <div id="match19" class="layout">
               <div id="result19" class="results"></div>
         <div class="gameSettings">
             <img id="champImage19" height="80%" width="80%" />
@@ -785,7 +789,7 @@
         </div>
     </div>
 
-    <div id="match20">
+    <div id="match20" class="layout">
             <div id="result20" class="results"></div>
         <div class="gameSettings">
             <img id="champImage20" height="80%" width="80%" />
@@ -823,7 +827,7 @@
         </div>
     </div>
 
-    <div id="match21">
+    <div id="match21" class="layout">
                 <div id="result21" class="results"></div>
         <div class="gameSettings">
             <img id="champImage21" height="80%" width="80%" />
@@ -861,7 +865,7 @@
         </div>
     </div>
 
-    <div id="match22">
+    <div id="match22" class="layout">
                 <div id="result22" class="results"></div>
         <div class="gameSettings">
             <img id="champImage22" height="80%" width="80%" />
@@ -899,7 +903,7 @@
         </div>
     </div>
 
-    <div id="match23">
+    <div id="match23" class="layout">
                 <div id="result23" class="results"></div>
         <div class="gameSettings">
             <img id="champImage23" height="80%" width="80%" />
@@ -937,7 +941,7 @@
         </div>
     </div>
 
-    <div id="match24">
+    <div id="match24" class="layout">
                <div id="result24" class="results"></div>
         <div class="gameSettings">
             <img id="champImage24" height="80%" width="80%" />
