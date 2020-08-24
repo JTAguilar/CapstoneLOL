@@ -127,7 +127,7 @@ const dbName = 'LOLCapstone'
                             document.getElementById("Level").innerHTML = Gamestats.participants[participantID].stats.champLevel
                             document.getElementById("CS").innerHTML = Gamestats.participants[participantID].stats.totalMinionsKilled
                             for(players = 0; players < 10; players++){
-                                GetchampIMG('/10.16.1/data/en_US/champion/championFull.json', function(text){
+                                /*GetchampIMG('/10.16.1/data/en_US/champion/championFull.json', function(text){
                                     var champim = JSON.parse(text);
                                     console.log(champim)
                                     forEach(chimpim.keys){
@@ -138,7 +138,7 @@ const dbName = 'LOLCapstone'
                                     }
                                     }
                                 document.getElementById("Isumm" + players).innerHTML = ('/10.16.1/img/champion' + image);
-                                }
+                                }*/
                             document.getElementById("summ" + players).innerHTML = Gamestats.participantIdentities[players].player.summonerName
                             }
                             if(winCondition == true){
