@@ -1,5 +1,4 @@
 const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
 
 var Playerdata;
 var MatchID;
@@ -16,7 +15,7 @@ const mongourl = 'mongodb://localhost:27017';
 const dbName = 'LOLCapstone'
 
 MongoClient.connect(url, function(err, client) {
-    assert.equal(null, err);
+    
     console.log("Connected correctly to server");
 
     const db1 = client.db(dbName);
