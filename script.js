@@ -122,7 +122,8 @@ const dbName = 'LOLCapstone'
                             document.getElementById("Level").innerHTML = Gamestats.participants[participantID].stats.champLevel
                             document.getElementById("CS").innerHTML = Gamestats.participants[participantID].stats.totalMinionsKilled
                             for(players = 0; players < 10; players++){
-                            document.getElementById("summ"players).innerHTML = Gamestats.participantIdentities[players].player.summonerName
+                            GetchampIMG(Gamestats.);
+                            document.getElementById("summ" + players).innerHTML = Gamestats.participantIdentities[players].player.summonerName
                             }
                             if(winCondition == true){
                                 document.getElementById("result").innerHTML = 'Victory';
