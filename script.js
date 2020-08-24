@@ -4,8 +4,8 @@ const assert = require('assert');
 var Playerdata;
 var MatchID;
 var request = new XMLHttpRequest();
-var ApiKey = 'RGAPI-1642ace6-8ca9-4c76-b7a9-682ecd4984e4';
-var proxyurl = "https://cors-anywhere.herokuapp.com/"
+const ApiKey = 'RGAPI-1642ace6-8ca9-4c76-b7a9-682ecd4984e4';
+const proxyurl = 'https://cors-anywhere.herokuapp.com/';
 var params = new URLSearchParams(window.location.search);
 var Summoner = params.get('userName');
 var games = [];
@@ -59,7 +59,7 @@ MongoClient.connect(url, function(err, client) {
         request.onload = MatchStatsLoadComplete;
         request.send();
     }
-        /*
+        
 
     function callAPI(){
         var params = new URLSearchParams(window.location.search);
@@ -139,5 +139,3 @@ MongoClient.connect(url, function(err, client) {
            }
 	     }
     } 
-});
-*/
