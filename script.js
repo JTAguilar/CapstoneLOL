@@ -67,7 +67,7 @@ const dbName = 'LOLCapstone'
         
 
     function callAPI(){
-        console.log("Database Connected")
+        //console.log("Database Connected")
         var params = new URLSearchParams(window.location.search);
             //console.log(params.get('userName'));
         
