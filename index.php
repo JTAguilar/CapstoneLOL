@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+$servername = 'localhost';
+$username = 'Admin';
+$password = 'Bubbletoaster23~';
+
+$conn = new mysqli($servername, $username, $password);
+
+if($conn->connect_error) {
+	die("connection failed: " . $conn->connect_error);
+}
+echo "Connected Succesfully";
+
+$sql = "Create Database myDB";
+if ($conn->query($sql) === TRUE) {
+	echo "Database created Succesfully";
+} else {
+	echo "Error Creating Databse: " .$conn->error;
+}
+
+$conn->close();
+?>
+
+
+
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css" />
