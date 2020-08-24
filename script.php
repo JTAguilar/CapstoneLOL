@@ -1,6 +1,6 @@
 <?php
 
-$ composer require mongodb/mongodb
+//$ composer require mongodb/mongodb
 
 $Playerdata;
 $MatchId;
@@ -38,7 +38,7 @@ function console_log($output, $with_script_tags = true) {
     
     </head>
 
-    <body onload="script.php">
+    <body>
 
         <div class="search_bar">
         <form id="summonerForm" class="summoner-search-form" action="Summonerinfo.html" </form>
