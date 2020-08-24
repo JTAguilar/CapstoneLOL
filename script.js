@@ -85,7 +85,7 @@ MongoClient.connect(url, function(err, client) {
             //return accID;
     }
 
-    //function GameLoadComplete(evt) {
+ /*   function GameLoadComplete(evt) {
         MatchID = JSON.parse(request.responseText);
         //console.log(MatchID);
    
@@ -138,5 +138,5 @@ MongoClient.connect(url, function(err, client) {
 				    }
            }
 	     }
-    }
+    } */
 });
