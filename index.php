@@ -29,7 +29,7 @@ $conn->close();
 </head>
 
 <body>
-    <h1>Hello and welcome to this page. Don't worry its a work in progress.</h1>
+    <h1>DID I WIN??</h1>
     <div class="l-container">            
         <div class="index-logo">
                 <iframe src="https://giphy.com/embed/RGdfSa7X0OIQzGPfjZ" title="Fine" alt="This is fine" class="Image"></iframe>
