@@ -36,7 +36,7 @@ MongoClient.connect(url, function(err, client) {
 
 
 
-    //client.close();
+    client.close();
 });
 
 
@@ -85,7 +85,7 @@ MongoClient.connect(url, function(err, client) {
             //return accID;
     }
 
-    function GameLoadComplete(evt) {
+    //function GameLoadComplete(evt) {
         MatchID = JSON.parse(request.responseText);
         //console.log(MatchID);
    
@@ -96,7 +96,7 @@ MongoClient.connect(url, function(err, client) {
           //console.log(games);
     }
 
-    function MatchStatsLoadComplete(evt) {
+   // function MatchStatsLoadComplete(evt) {
         var username = params.get('userName').toLowerCase();
         Gamestats = JSON.parse(request.responseText);
         console.log(Gamestats);
