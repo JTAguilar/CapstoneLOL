@@ -1,4 +1,4 @@
-const {MongoClient} = require('mongodb');
+//const {MongoClient} = require('mongodb');
 
 var Playerdata;
 var MatchID;
@@ -14,7 +14,7 @@ const mongourl = 'mongodb://localhost:27017';
 
 const dbName = 'LOLCapstone'
 
-MongoClient.connect(url, function(err, client) {
+/*MongoClient.connect(url, function(err, client) {
     
     console.log("Connected correctly to server");
 
@@ -38,7 +38,7 @@ MongoClient.connect(url, function(err, client) {
 
     client.close();
 });
-
+*/
 
 
     function loadPlayerData(username) {
@@ -61,7 +61,7 @@ MongoClient.connect(url, function(err, client) {
     }
         
 
-/*    function callAPI(){
+    function callAPI(){
         var params = new URLSearchParams(window.location.search);
             //console.log(params.get('userName'));
         
