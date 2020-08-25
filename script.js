@@ -1,4 +1,4 @@
-//const {MongoClient} = require('mongodb');
+
 
 var Playerdata;
 var MatchID;
@@ -8,39 +8,6 @@ const proxyurl = 'https://cors-anywhere.herokuapp.com/';
 var params = new URLSearchParams(window.location.search);
 var Summoner = params.get('userName');
 var games = [];
-
-//connection URL
-const mongourl = 'mongodb://localhost:27017';
-
-const dbName = 'LOLCapstone'
-
-/*MongoClient.connect(url, function(err, client) {
-    
-    console.log("Connected correctly to server");
-
-    const db1 = client.db(dbName);
-    
-
-    try{
-        db1.collection("SummNames").find(Summoner);
-    }catch{
-        loadPlayerData(Summoner);
-        Playerdata = JSON.parse(request.responseText);
-        const sumNameInfo = {
-            name: Summoner,
-            data: Playerdata
-        }
-        db1.collection("SummNames").insetOne(sumNameInfo);
-        console.log(sumNameInfo);
-    }
-
-
-
-    client.close();
-});*/
-
-
-
 
     function loadPlayerData(username) {
     
