@@ -163,16 +163,21 @@ function MatchStatsLoadComplete(evt) {
 
       var imgDiv = document.createElement("div");
       imgDiv.className = "imgDiv";
+      var imgLink = document.createElement("a");
+      imgLink.target = "_blank"
       var img = document.createElement("img");
       var userChampId = Gamestats.participants[participantID].championId;
       var userChampName = ChampID.keys[userChampId];
+      imgLink.href = "https://na.leagueoflegends.com/en-us/champions/" +
+      userChampName.toLowerCase();
       img.src =
         "http://ddragon.leagueoflegends.com/cdn/10.16.1/img/champion/" +
         userChampName +
         ".png";
       img.id = "champImage";
       img.className = "champImage";
-      imgDiv.appendChild(img);
+      imgLink.appendChild(img);
+      imgDiv.appendChild(imgLink);
 
       var kdaDiv = document.createElement("div");
       kdaDiv.className = "kda";
