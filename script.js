@@ -103,7 +103,7 @@ function callAPI() {
 
 function playerLoadComplete(evt) {
   Playerdata = JSON.parse(request.responseText);
-  console.log(Playerdata);
+  //console.log(Playerdata);
   document.getElementById("sumName").innerHTML = Playerdata.name;
   var accID = Playerdata.accountId;
   var iconId = Playerdata.profileIconId;
@@ -111,7 +111,7 @@ function playerLoadComplete(evt) {
     "http://ddragon.leagueoflegends.com/cdn/10.16.1/img/profileicon/" +
     iconId +
     ".png";
-  console.log(accID);
+  //console.log(accID);
   loadMatchData(accID);
   //return accID;
 }
