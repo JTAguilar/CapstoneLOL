@@ -230,6 +230,8 @@ function MatchStatsLoadComplete(evt) {
         for (let p = 0; p < 5; p++) {
           var playerDiv = document.createElement("div");
           playerDiv.className = "summoner";
+          var champLink = document.createElement("a");
+          champLink.target = "_blank"
           var playerChampImg = document.createElement("img");
           playerChampImg.className = "champImageList";
           var playerSummNameSpan = document.createElement("span");
@@ -240,10 +242,12 @@ function MatchStatsLoadComplete(evt) {
             "http://ddragon.leagueoflegends.com/cdn/10.16.1/img/champion/" +
             championName +
             ".png";
+          champLink.href = 'https://na.leagueoflegends.com/en-us/champions/' + championName.toLowerCase();
           playerSummNameSpan.innerHTML =
             Gamestats.participantIdentities[5 * t + p].player.summonerName;
 
-          playerDiv.appendChild(playerChampImg);
+          champLink.appendChild(playerChampImg);
+          playerDiv.appendChild(champLink);
           playerDiv.appendChild(playerSummNameSpan);
           teamDiv.appendChild(playerDiv);
         }
