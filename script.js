@@ -231,10 +231,14 @@ function MatchStatsLoadComplete(evt) {
           var playerDiv = document.createElement("div");
           playerDiv.className = "summoner";
           var champLink = document.createElement("a");
-          champLink.target = "_blank"
+          champLink.target = "_blank";
           var playerChampImg = document.createElement("img");
           playerChampImg.className = "champImageList";
-          var playerSummNameSpan = document.createElement("span");
+          var playerSummNameSpan = document.createElement("a");
+          playerSummNameSpan.target = "_blank";
+          playerSummNameSpan.href =
+            "http://69.27.22.223/Summonerinfo.html?userName=" +
+            Gamestats.participantIdentities[5 * t + p].player.summonerName;
           playerSummNameSpan.className = "summonerName";
           var championID = Gamestats.participants[5 * t + p].championId;
           var championName = ChampID.keys[championID];
@@ -242,7 +246,9 @@ function MatchStatsLoadComplete(evt) {
             "http://ddragon.leagueoflegends.com/cdn/10.16.1/img/champion/" +
             championName +
             ".png";
-          champLink.href = 'https://na.leagueoflegends.com/en-us/champions/' + championName.toLowerCase();
+          champLink.href =
+            "https://na.leagueoflegends.com/en-us/champions/" +
+            championName.toLowerCase();
           playerSummNameSpan.innerHTML =
             Gamestats.participantIdentities[5 * t + p].player.summonerName;
 
