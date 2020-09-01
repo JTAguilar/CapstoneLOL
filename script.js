@@ -3,7 +3,7 @@
 var Playerdata;
 var MatchID;
 var request = new XMLHttpRequest();
-const ApiKey = " RGAPI-a110b032-1470-42f2-982d-c38c0098d08a";
+const ApiKey = "RGAPI-fa5ec11d-2ce4-41c2-bc67-e94c7b523a59";
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
 var params = new URLSearchParams(window.location.search);
 var Summoner = params.get("userName");
